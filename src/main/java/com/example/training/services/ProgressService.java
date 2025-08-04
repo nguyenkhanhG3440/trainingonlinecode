@@ -1,12 +1,13 @@
 package com.example.training.services;
 
-import com.example.training.models.Progress;
-import com.example.training.repositories.ProgressRepository;
-import lombok.RequiredArgsConstructor;
+import java.util.Optional;
+
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.example.training.models.Progress;
+import com.example.training.repositories.ProgressRepository;
+
+import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor

@@ -1,16 +1,18 @@
 package com.example.training.services;
 
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
 import com.example.training.models.Lab;
 import com.example.training.models.LabSubmission;
 import com.example.training.models.User;
 import com.example.training.repositories.LabRepository;
 import com.example.training.repositories.LabSubmissionRepository;
 import com.example.training.repositories.UserRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
@@ -28,7 +30,7 @@ public class LabSubmissionService {
         sub.setLab(lab);
         sub.setUser(user);
         sub.setCode(code);
-        sub.setScore(0.0); // TODO: Judge0 API here
+        sub.setScore(0.0);
         sub.setResult("Pending");
 
         return subRepo.save(sub);
