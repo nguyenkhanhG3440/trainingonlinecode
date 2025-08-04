@@ -1,16 +1,18 @@
 package com.example.training.services;
 
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import com.example.training.models.Certificate;
 import com.example.training.models.Course;
 import com.example.training.models.User;
 import com.example.training.repositories.CertificateRepository;
 import com.example.training.repositories.CourseRepository;
 import com.example.training.repositories.UserRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import lombok.RequiredArgsConstructor;
+
 
 @Service
 @RequiredArgsConstructor
